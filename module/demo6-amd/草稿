@@ -1,0 +1,9 @@
+module A
+
+module B
+
+
+
+
+
+define => 模块A => 模块B（反依赖模块A）
