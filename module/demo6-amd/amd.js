@@ -1,4 +1,4 @@
-((global) => {
+((global, document) => {
   const _mods = {};
   global._mods = _mods;
   let count = 0;
@@ -58,7 +58,7 @@
     this.length === 0 && this.exec();
     this.subs.forEach((item) => {
       del(item.dependencies2, this.id);
-      item.checkLoaded()
+      item.checkLoaded();
     });
   };
 
